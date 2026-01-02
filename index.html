@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
     <title>Happy Anniversary - zee & tk</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anuphan:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
         :root {
             --bg-color: #000000;
@@ -17,8 +20,8 @@
             margin: 0; padding: 0;
             background: var(--bg-color);
             overflow: hidden;
-            /* เปลี่ยนฟอนต์เป็น Calibri */
-            font-family: 'Calibri', 'Segoe UI', Helvetica, Arial, sans-serif !important; 
+            /* เปลี่ยนฟอนต์เป็น Anuphan */
+            font-family: 'Anuphan', sans-serif !important; 
             width: 100vw; height: 100dvh; touch-action: none; position: fixed; color: #fff;
         }
 
@@ -43,9 +46,9 @@
         .start-btn {
             padding: 15px 40px; border-radius: 50px;
             background: #fff; color: #333;
-            /* ฟอนต์ Calibri */
-            font-family: 'Calibri', 'Segoe UI', sans-serif !important;
-            font-size: 1.3rem; font-weight: 600;
+            /* ฟอนต์ Anuphan Bold */
+            font-family: 'Anuphan', sans-serif !important;
+            font-size: 1.3rem; font-weight: 700;
             box-shadow: 0 0 20px rgba(255, 255, 255, 0.5); 
             animation: pulseBtn 2s infinite; border: none;
         }
@@ -61,8 +64,8 @@
         #name-container.visible { opacity: 1; transform: translate(-50%, -50%) scale(1); }
 
         .glowing-text {
-            /* ฟอนต์ Calibri */
-            font-family: 'Calibri', 'Segoe UI', sans-serif !important;
+            /* ฟอนต์ Anuphan Bold */
+            font-family: 'Anuphan', sans-serif !important;
             font-weight: 700;
             font-size: 2.8rem; color: #fff; 
             text-shadow: 0 0 10px #ff69b4, 0 0 20px #ff1493;
@@ -77,8 +80,8 @@
             border: 1px solid rgba(255,255,255,0.2);
             text-align: center;
         }
-        .timer-label { font-size: 1rem; opacity: 0.9; display: block; margin-bottom: 5px; font-weight: 500; }
-        #love-timer { font-size: 1.1rem; color: #fff; font-weight: 500; letter-spacing: 0.5px; }
+        .timer-label { font-size: 1rem; opacity: 0.9; display: block; margin-bottom: 5px; font-weight: 600; }
+        #love-timer { font-size: 1.1rem; color: #fff; font-weight: 600; letter-spacing: 0.5px; }
         .timer-highlight { font-weight: 700; color: #ff9ecd; font-variant-numeric: tabular-nums; }
 
         /* --- Puzzle --- */
@@ -92,7 +95,7 @@
         }
         #puzzle-wrapper.active { opacity: 1; pointer-events: auto; }
 
-        .puzzle-title { color: var(--text-main); margin-bottom: 15px; font-size: 1.1rem; text-align: center; font-weight: 600;}
+        .puzzle-title { color: var(--text-main); margin-bottom: 15px; font-size: 1.1rem; text-align: center; font-weight: 700;}
         
         #puzzle-board {
             display: grid; grid-template-columns: repeat(3, 1fr); grid-template-rows: repeat(3, 1fr);
@@ -116,11 +119,10 @@
             background: rgba(0,0,0,0.6); backdrop-filter: blur(5px); transition: opacity 0.5s;
         }
         .success-card {
-            background: #fff; color: #333; padding: 25px 50px; border-radius: 50px; font-size: 1.5rem; font-weight: 600;
+            background: #fff; color: #333; padding: 25px 50px; border-radius: 50px; font-size: 1.5rem; font-weight: 700;
             box-shadow: 0 0 30px rgba(255, 105, 180, 0.6); transform: scale(0.8); transition: transform 0.4s;
             text-align: center;
-            /* ฟอนต์ Calibri */
-            font-family: 'Calibri', 'Segoe UI', sans-serif !important;
+            font-family: 'Anuphan', sans-serif !important;
         }
         #success-msg-overlay.show { opacity: 1; } #success-msg-overlay.show .success-card { transform: scale(1); }
 
@@ -143,7 +145,7 @@
 
         .title-msg { font-size: 1.8rem; color: #ff69b4; font-weight: 700; margin-bottom: 10px; text-align: center; flex-shrink: 0; }
         .body-msg { 
-            font-size: 1rem; color: var(--text-sub); font-weight: 500; 
+            font-size: 1rem; color: var(--text-sub); font-weight: 600; 
             text-align: center; line-height: 1.6; margin-bottom: 20px; 
             padding: 0 25px; width: 100%; box-sizing: border-box; 
             white-space: pre-line;
@@ -166,9 +168,9 @@
             margin-top: 10px; padding: 12px 30px;
             background: linear-gradient(135deg, #ff9a9e 0%, #ff6a88 100%);
             border: none; border-radius: 30px; color: #fff; 
-            /* ฟอนต์ Calibri */
-            font-family: 'Calibri', 'Segoe UI', sans-serif !important;
-            font-size: 1.1rem; font-weight: 600;
+            /* ฟอนต์ Anuphan Bold */
+            font-family: 'Anuphan', sans-serif !important;
+            font-size: 1.1rem; font-weight: 700;
             cursor: pointer; box-shadow: 0 5px 15px rgba(255, 105, 180, 0.4);
             transition: transform 0.2s;
             flex-shrink: 0;
