@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
-    <title>Happy New Year - Zee & TK</title>
-    <link href="https://fonts.googleapis.com/css2?family=Mali:wght@400;500;600;700&family=Pacifico&display=swap" rel="stylesheet">
+    <title>Happy Anniversary - zee & tk</title>
+    <link href="https://fonts.googleapis.com/css2?family=Mali:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
         :root {
             --bg-color: #000000;
@@ -17,8 +17,9 @@
         body {
             margin: 0; padding: 0;
             background: var(--bg-color);
-            overflow: hidden; /* ห้ามเลื่อนที่ตัว Body เพื่อให้พื้นหลังนิ่ง */
-            font-family: 'Mali', cursive; 
+            overflow: hidden;
+            /* บังคับใช้ฟอนต์ Mali ทั้งหมด */
+            font-family: 'Mali', cursive !important; 
             width: 100vw; height: 100dvh; touch-action: none; position: fixed; color: #fff;
         }
 
@@ -51,7 +52,7 @@
 
         /* --- ชื่อบนพลุ --- */
         #name-container {
-            position: absolute; top: 12%; left: 50%;
+            position: absolute; top: 15%; left: 50%;
             transform: translate(-50%, -50%) scale(0.9);
             z-index: 10; opacity: 0; pointer-events: none;
             transition: all 1.2s ease-out; width: 100%; text-align: center;
@@ -59,7 +60,7 @@
         #name-container.visible { opacity: 1; transform: translate(-50%, -50%) scale(1); }
 
         .glowing-text {
-            font-family: 'Mali', cursive; font-weight: 700;
+            font-family: 'Mali', cursive !important; font-weight: 700;
             font-size: 2.8rem; color: #fff; 
             text-shadow: 0 0 10px #ff69b4, 0 0 20px #ff1493;
             white-space: nowrap; margin: 0; letter-spacing: 1px;
@@ -73,8 +74,8 @@
             border: 1px solid rgba(255,255,255,0.2);
             text-align: center;
         }
-        .timer-label { font-size: 0.9rem; opacity: 0.9; display: block; margin-bottom: 5px; }
-        #love-timer { font-size: 1rem; color: #fff; font-weight: 500; letter-spacing: 0.5px; }
+        .timer-label { font-size: 1rem; opacity: 0.9; display: block; margin-bottom: 5px; font-weight: 500; }
+        #love-timer { font-size: 1.1rem; color: #fff; font-weight: 500; letter-spacing: 0.5px; }
         .timer-highlight { font-weight: 700; color: #ff9ecd; font-variant-numeric: tabular-nums; }
 
         /* --- Puzzle --- */
@@ -114,6 +115,8 @@
         .success-card {
             background: #fff; color: #333; padding: 25px 50px; border-radius: 50px; font-size: 1.5rem; font-weight: 600;
             box-shadow: 0 0 30px rgba(255, 105, 180, 0.6); transform: scale(0.8); transition: transform 0.4s;
+            text-align: center;
+            font-family: 'Mali', cursive !important;
         }
         #success-msg-overlay.show { opacity: 1; } #success-msg-overlay.show .success-card { transform: scale(1); }
 
@@ -134,9 +137,9 @@
         }
         #content-box.visible { opacity: 1; transform: translateY(0); pointer-events: auto; }
 
-        .title-msg { font-size: 1.5rem; color: #ff69b4; font-weight: 700; margin-bottom: 10px; text-align: center; flex-shrink: 0; }
+        .title-msg { font-size: 1.8rem; color: #ff69b4; font-weight: 700; margin-bottom: 10px; text-align: center; flex-shrink: 0; }
         .body-msg { 
-            font-size: 0.95rem; color: var(--text-sub); font-weight: 500; 
+            font-size: 1rem; color: var(--text-sub); font-weight: 500; 
             text-align: center; line-height: 1.6; margin-bottom: 20px; 
             padding: 0 25px; width: 100%; box-sizing: border-box; 
             white-space: pre-line;
@@ -176,7 +179,7 @@
             border: 3px solid #ff9a9e;
         }
         #note-popup.show { opacity: 1; transform: translate(-50%, -50%) scale(1); pointer-events: auto; }
-        .note-text { font-size: 1.1rem; line-height: 1.5; margin-bottom: 10px; color: #ff6a88; font-weight: 600; }
+        .note-text { font-size: 1.3rem; line-height: 1.5; margin-bottom: 10px; color: #ff6a88; font-weight: 700; }
         
         /* Animation หัวใจเต้น */
         @keyframes heartbeat { 0% {transform: scale(1);} 50% {transform: scale(1.1);} 100% {transform: scale(1);} }
@@ -200,7 +203,7 @@
     <div id="name-container">
         <h1 class="glowing-text">zee ♥️ tk</h1>
         <div id="love-timer-container">
-            <span class="timer-label">อยู่ด้วยกันมา.. 10 ก.ย. 68</span>
+            <span class="timer-label">อยู่ด้วยกันมา...</span>
             <div id="love-timer">กำลังคำนวณ...</div>
         </div>
     </div>
@@ -215,16 +218,12 @@
     </div>
 
     <div id="content-box">
-        <div class="title-msg">Happy New Year 2026 🎉</div>
+        <div class="title-msg">rak moo auen</div>
         
         <div class="body-msg">
-rak moo auen
-ดีใจที่ได้เจอกันนะ ขอบคุณที่เข้ามา รักพี่ที่สุดนะคนเก่งของหนู 
-ข้างพี่จะมีหนูคอยให้กำลังใจเสมอนะ♥️♥️
-
+ดีใจที่ได้เจอกันนะ ขอบคุณที่เข้ามา รักพี่ที่สุดนะคนเก่งของหนู ข้างพี่จะมีหนูคอยให้กำลังใจเสมอนะ♥️♥️
 ปีนี้ไปเที่ยวด้วยกันเยอะ ๆ ถ่าย photobooth ด้วยกันหลาย ๆ ใบเลย
-
-<span class="beating-heart" style="font-size: 1.2em;">หนู ร้าก อ้วน ❤️</span>
+หนู ร้าก อ้วน
         </div>
         
         <div class="photo-frame" onclick="nextPhoto()">
@@ -232,7 +231,7 @@ rak moo auen
         </div>
         <div class="click-hint">แตะที่รูปเพื่อดูรูปอื่นๆ 📸</div>
 
-        <button class="love-note-btn" onclick="showNextNote()">💌 กดเพื่อจุ่ม</button>
+        <button class="love-note-btn" onclick="showNextNote()">กดเพื่อจุ่ม</button>
     </div>
 
     <div id="note-popup">
@@ -241,15 +240,13 @@ rak moo auen
     </div>
 
     <script>
-        // --- 1. วันที่เริ่มรัก (10 กันยายน 2568 = ค.ศ. 2025) ---
-        // ใช้ 2025 เพราะปีปัจจุบันในบริบทคือ 2026 ตามที่ระบุ
+        // --- 1. วันที่เริ่ม (10 กันยายน 2568 = ค.ศ. 2025) ---
         const startDate = new Date("2025-09-10T00:00:00"); 
 
         function updateTimer() {
             const now = new Date();
             const diff = now - startDate;
             
-            // ป้องกันเวลาติดลบ กรณีเทสก่อนวันจริง
             if (diff < 0) {
                  document.getElementById('love-timer').innerHTML = "รอวันครบรอบอยู่นะ...";
                  return;
@@ -260,6 +257,7 @@ rak moo auen
             const minutes = Math.floor((diff / 1000 / 60) % 60);
             const seconds = Math.floor((diff / 1000) % 60);
 
+            // แสดง เวลา ชั่วโมง นาที วินาที (ยังคงวันไว้ เพราะถ้านับแค่ชั่วโมงตัวเลขจะเยอะมากจนดูยาก)
             document.getElementById('love-timer').innerHTML = 
                 `<span class="timer-highlight">${days}</span> วัน 
                  <span class="timer-highlight">${hours}</span> ชม. 
@@ -269,19 +267,21 @@ rak moo auen
         setInterval(updateTimer, 1000); 
         updateTimer();
 
-        // --- ระบบข้อความ (เปลี่ยนเป็นสุ่ม) ---
+        // --- ระบบสุ่มข้อความ (Random) ---
         const loveNotes = [
-            "จุ้บแก้ม 1 ครั้ง 😘",
-            "หอมแก้ม 2 ข้าง 😚",
-            "จุ้บปาก 1 ที 💋",
-            "โดนลูบหัว 💆‍♀️",
-            "โดนบีบพุง 🤏"
+            "จุ้บแก้ม1ครั้ง",
+            "หอมแก้ม2ข้าง",
+            "จุ้บปาก1ที",
+            "โดนลูบหัว",
+            "โดนบีบพุง"
         ];
 
-        // ฟังก์ชันสุ่มข้อความ
         function showNextNote() {
             const popup = document.getElementById('note-popup');
+            
+            // ใช้ Math.random() เพื่อสุ่ม (Random)
             const randomIndex = Math.floor(Math.random() * loveNotes.length);
+            
             document.getElementById('note-content').innerText = loveNotes[randomIndex];
             popup.classList.add('show');
         }
@@ -296,7 +296,7 @@ rak moo auen
 
         // --- Decor (Hearts) ---
         const decoLayer = document.getElementById('deco-layer');
-        const hearts = ['💖', '💕', '✨', '💗', '🥰'];
+        const hearts = ['♥️', '💕', '✨', '💗', '🥰'];
         setInterval(() => {
             const heart = document.createElement('div');
             heart.className = 'floating-heart';
